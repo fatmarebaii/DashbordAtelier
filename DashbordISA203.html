@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <script>
+    function autoRefresh() {
+        window.location = window.location.href="http://localhost/digitex_isa/dashbord_atelier/ISA201/DashbordISA201.html";
+    }
+    setInterval('autoRefresh()', 300000);
+</script>
+  
+
+  <script language="javascript">
+    setTimeout(function(){
+      window.location.reload(1);
+    }, 20000);
+    </script>
+
+  <!--<link href="css/startbootstrap-sb-admin-2-master/" rel="stylesheet" type="text/css">-->
+  <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+      <!--<link href="php/control_quality.php" >
+      <link href="php/Qengage.php" >
+      <link href="php/Qencour.php">
+      <link href="php/Qfab.php">
+      <link href="php/performance.php">-->
+
+    <title>Dashbord DigiTex By Advantry X </title>
+
+</head>
+<body>
+
+  <script src="http://192.168.200.163/dash/dashbord_atelier/ISA201/script.js" ></script> 
+
+
+  <div id="wrapper">
+    <div class="container-fluid ">
+
+      <!-- Page Heading -->
+      <div class="d-sm-flex align-items-center justify-content-between mb-4">
+          <h1 class="h1 mb-0 font-weight-bold text-black-900" id="PL" style="text-align:center"> Prod Line : ISA203 <!-- <script LANGUAGE="JavaScript">
+            var PL = getProdLine();
+            document.write(PL); </script> --> </h1>
+          <h3 class="h3 mb-0 text-black-900"> Date:  <SCRIPT LANGUAGE="JavaScript">
+            var d = new Date();
+            var date = d.getFullYear()+'/'+(d.getMonth()+1)+'/'+d.getDate();
+            document.write(date);
+            </SCRIPT></h3>
+          <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+          <div class="h3 mb-0 text-black-800" id="time"></div>
+          <h3 class="h3 mb-0 text-black-800"> Heure:  <SCRIPT LANGUAGE="JavaScript">
+            var d = new Date();
+            var hours = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+            document.write(hours);
+            </SCRIPT></h3>
+           
+      </div>
+      <div class="row">
+
+      <!-- Qté Engagée -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-left-primary shadow h-100 py-2">
+        <div class="card-body">
+        <div class="row no-gutters align-items-center">
+              <div class="col mr-2">
+                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1" style="text-align:center" >
+                  Quantité Engagée
+                </div>
+                <div class="h5 mb-0 font-weight-bold text-gray-900" style="text-align:center" id="Qte">
+                  <!--<script LANGUAGE="JavaScript">
+                    var Qte = getEngage();
+                    document.write(Qte); </script>-->
+                </div>
+              </div>
+            <div class="col-auto">
+              <i class="fas fa-calendar fa-2x text-gray-300"></i>
+            </div>
+          </div>
+         </div>
+      </div>
+    </div>
+
+    <!-- Quantité Encours -->
+    <div class="col-xl-3 col-md-6 mb-4">
+    <div class="card border-left-info shadow h-100 py-2">
+      <div class="card-body">
+      <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-info text-uppercase mb-1" style="text-align:center">
+                Quantité Encours
+              </div>
+              <div id="Encours" class="h5 mb-0 font-weight-bold text-gray-900" style="text-align:center">
+                 <!-- <h1><script LANGUAGE="JavaScript">
+                  var enc = getEncours();
+                  document.write(enc); </script></h1> -->
+              </div>
+            </div>
+          <div class="col-auto">
+            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+          </div>
+        </div>
+       </div>
+    </div>
+  </div>
+  </div>
+<div class="row">
+     <!-- Controle Qualité -->
+     <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-left-info shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-info text-uppercase mb-1" style="text-align:center">
+                Indice de controle Qualité
+              </div>
+            <div id="cq" class="h5 mb-0 font-weight-bold text-gray-900" style="text-align:center" >
+              
+            </div>
+          </div>
+          <div class="col-auto">
+            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Quantité Fabriqué -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-left-warning shadow h-100 py-2">
+        <div class="card-body">
+        <div class="row no-gutters align-items-center">
+              <div class="col mr-2">
+                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1" style="text-align:center">
+                  Quantité Fabriquée
+                </div>
+                <div class="h5 mb-0 font-weight-bold text-gray-900" style="text-align:center" id="fab">
+                  <!-- <h1><script LANGUAGE="JavaScript">
+                    var fab = getFab();
+                    document.write(fab); </script></h1> -->
+                </div>
+              </div>
+            <div class="col-auto">
+              <i class="fas fa-calendar fa-2x text-gray-300"></i>
+            </div>
+          </div>
+         </div>
+      </div>
+    </div>
+</div> 
+<div class="row">
+<!-- Performance -->
+
+<div class="col-xl-3 col-md-6 mb-4">
+  <div class="card border-left-success shadow h-100 py-2">
+    <div class="card-body">
+      <div class="row no-gutters align-items-center">
+        <div class="col mr-2">
+          <div class="text-xs font-weight-bold text-success text-uppercase mb-1" style="text-align:center">
+            Rendement
+          </div>
+        <div class="h5 mb-0 font-weight-bold text-gray-900" style="text-align:center" id="perf"> 
+          <!-- <h1><script LANGUAGE="JavaScript">
+            var perf = getPerformance();
+            document.write(perf); </script></h1> -->
+        </div>
+      </div>
+      <div class="col-auto">
+        <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+      </div>
+      <a class="collapse-item" href="http://192.168.200.163/IsaDigitalTwinBuild/">DIGITAL TWIN</a>
+
+<!--</div>-->
+</div>
+</div>
+<!--pied de la page-->
+<footer class="sticky-footer bg-white">
+  <div class="container my-auto">
+    <div class="copyright text-center my-auto">
+        <span>Copyright &copy; DigiTex by Advanty X 2023 </span>
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>                 

@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "-webkit-text-size-adjust",
+          "text-align: -webkit-match-parent"
+        ]
+      }
+    ],
+    "axe/aria": [
+      "default",
+      {
+        "aria-progressbar-name": "off"
+      }
+    ],
+    "manifest-file-extension": "off",
+    "no-inline-styles": "off",
+    "apple-touch-icons": "off",
+    "axe/time-and-media": "off"
+  }
+}
